@@ -4,7 +4,8 @@
 
 ;; Author: Brian Sermons
 ;;         Bodil Stokke <bodil@bodil.org>
-;; Package-Requires: ((flycheck "0.24") (emacs "24.4"))
+;; Package-Requires: ((flycheck "0.24") (emacs "24.4") (let-alist "1.0.4") (psc-ide "0.1.0") (dash "2.12.0") (seq "1.11"))
+;; Version: 0.1
 ;; URL: https://github.com/epost/psc-ide-emacs
 
 ;; This file is not part of GNU Emacs.
@@ -24,8 +25,10 @@
 
 ;;; Commentary:
 
-;;; Usage: (eval-after-load 'flycheck
-;;;          '(add-hook 'flycheck-mode-hook #'psc-ide-flycheck-setup))
+;; Usage:
+;;
+;;     (eval-after-load 'flycheck
+;;       '(add-hook 'flycheck-mode-hook #'psc-ide-flycheck-setup))
 
 ;;; Code:
 
