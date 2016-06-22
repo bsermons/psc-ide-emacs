@@ -295,7 +295,7 @@ nicely displayed inside a compilation buffer."
     (save-restriction
       (widen)
       (goto-char (point-min))
-      (when (re-search-forward "module +\\([A-Z][A-Za-z0-9.]*\\)" nil t)
+      (when (re-search-forward "^module +\\([A-Z][A-Za-z0-9.]*\\)" nil t)
         (buffer-substring-no-properties (match-beginning 1) (match-end 1))))))
 
 (defun psc-ide-parse-exposed (exposed)
